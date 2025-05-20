@@ -23,7 +23,7 @@ SEEN_LISTINGS_FILE = "seen_listings.json"
 CHECK_INTERVAL = 1800  # In seconds (e.g., 3600 seconds = 1 hour)
 
 EMAIL_SETTINGS = {
-    sender_email": os.environ.get("SENDER_EMAIL"),
+    "sender_email": os.environ.get("SENDER_EMAIL"),
     "receiver_email": os.environ.get("RECEIVER_EMAIL"),
     "smtp_server": "smtp.gmail.com",  # adjust as needed
     "smtp_port": 587,  # adjust as needed
