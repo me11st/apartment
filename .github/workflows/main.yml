@@ -2,7 +2,7 @@ name: Apartment Search
 
 on:
   schedule:
-    - cron: '0 8-17 * * *'  # Runs every hour
+    - cron: '0 7-16 * * *'  # Runs every hour
 
 jobs:
   search:
