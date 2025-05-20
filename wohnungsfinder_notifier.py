@@ -75,7 +75,7 @@ def filter_listings(listings):
     for listing in listings:
         if (SEARCH_CRITERIA["location"].lower() in listing["location"].lower() and
             listing["price"] <= SEARCH_CRITERIA["max_price"] and
-            listing["rooms"] >= SEARCH_CRITERIA["min_rooms"] and
+            listing["rooms"] >= SEARCH_CRITERIA["max_rooms"] and
             (listing["wbs"] == SEARCH_CRITERIA["wbs_required"] or not SEARCH_CRITERIA["wbs_required"])):
             filtered.append(listing)
     return filtered
